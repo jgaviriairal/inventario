@@ -192,47 +192,47 @@
                                 <!-- Nombre -->
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <label class="form-label" for="nombre-cliente">Nombre</label>
+                                        <label class="form-label" id="FirstName" for="nombre-cliente">Nombre</label>
                                         <input type="text" id="nombre-cliente" class="form-control" required />
                                     </div>
                                     <div class="col-sm-6">
-                                        <label class="form-label" for="apellido-cliente">Apellido</label>
+                                        <label class="form-label" id="LastName" for="apellido-cliente">Apellido</label>
                                         <input type="text" id="apellido-cliente" class="form-control" required />
                                     </div>
                                 </div>
 
                                 <!-- Email -->
                                 <div class="form-group">
-                                    <label class="form-label" for="email-cliente">Email</label>
+                                    <label class="form-label" id="Email" for="email-cliente">Email</label>
                                     <input type="email" id="email-cliente" class="form-control" required />
                                 </div>
 
                                 <!-- Celular -->
                                 <div class="form-group">
-                                    <label class="form-label" for="celular-cliente">Celular</label>
+                                    <label class="form-label" id="celular" for="celular-cliente">Celular</label>
                                     <input type="tel" id="celular-cliente" class="form-control" required />
                                 </div>
 
                                 <!-- Direcciones -->
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <label class="form-label" for="direccion-cliente">Dirección Principal</label>
+                                        <label class="form-label" id="direccion" for="direccion-cliente">Dirección Principal</label>
                                         <input type="text" id="direccion-cliente" class="form-control" required />
                                     </div>
                                     <div class="col-sm-6">
-                                        <label class="form-label" for="direccion2-cliente">Dirección Secundaria</label>
+                                        <label class="form-label" id="direccion2" for="direccion2-cliente">Dirección Secundaria</label>
                                         <input type="text" id="direccion2-cliente" class="form-control" />
                                     </div>
                                 </div>
 
                                 <!-- Descripción -->
                                 <div class="form-group">
-                                    <label class="form-label" for="descripcion-cliente">Descripción</label>
+                                    <label class="form-label" id="descripcion" for="descripcion-cliente">Descripción</label>
                                     <textarea class="form-control" id="descripcion-cliente" rows="4"></textarea>
                                 </div>
 
                                 <!-- Botones -->
-                                <button type="button" class="btn-create btn btn-primary btn-block mb-4">Crear Cliente</button>
+                                <button type="button" id="btnCrear" class="btn-create btn btn-primary btn-block mb-4">Crear Cliente</button>
                                 <button type="button" class="d-none btn-update btn btn-success btn-block mb-4">Actualizar Cliente</button>
                             </form>
                         </div>
@@ -286,6 +286,9 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
     <script src="js/crear-cliente.js"></script>
+    <script type="module">
+        import getUser from "./js/local.js";
+    </script>
 </body>
 
 </html>
